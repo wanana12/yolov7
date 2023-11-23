@@ -1,4 +1,6 @@
 # yolov7_count
+yolov7のコードを書き換えたものです。
+
 data/dataset.yamlを追加
 
 utils/loss.pyを変更
