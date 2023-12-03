@@ -1,7 +1,7 @@
 # Please insure that your yolov7_dataset are put in same parent dir with YOLOv7_DIR
 train: /content/drive/MyDrive/yolov7_dataset/images/train # train images
 val: /content/drive/MyDrive/yolov7_dataset/images/val # val images
-test: /content/drive/MyDrive/yolov7_dataset/images/test # test images
+# test: /content/drive/MyDrive/yolov7_dataset/images/test # test images (optional)
 
 # Classes
 nc: 1  # number of classes
