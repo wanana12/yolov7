@@ -26,7 +26,7 @@ def count(founded_classes,im0):
     a=f"{k} = {v}"
     model_values.append(v)
     align_bottom=align_bottom-35                                                   
-    cv2.putText(im0, str(a) ,(int(align_right),align_bottom), cv2.FONT_HERSHEY_SIMPLEX, 1,(45,255,255),1,cv2.LINE_AA)
+    cv2.putText(im0, str(a) ,(int(align_right),align_bottom), cv2.FONT_HERSHEY_SIMPLEX, 1,(0,0,0),1,cv2.LINE_AA) # colorを(0,0,0)に変更
   
 
  
@@ -76,6 +76,7 @@ def detect(save_img=False):
     # Get names and colors
     names = model.module.names if hasattr(model, 'module') else model.names
     colors = [[random.randint(0, 255) for _ in range(3)] for _ in names]
+    colors = [[20, 255, 181] for _ in names] # 色の順番はBGR
 
     # Run inference
     if device.type != 'cpu':
