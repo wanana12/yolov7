@@ -1,5 +1,5 @@
 # yolov7
-yolov7のコードを書き換えたものです。
+WongKinYiuさんのyolov7のコードを書き換えたものです。
 
 data/dataset.yamlを追加
 
