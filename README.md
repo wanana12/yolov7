@@ -5,12 +5,16 @@ data/dataset.yamlを追加
 
 utils/loss.pyを変更
 
-detect_and_count.pyを変更
+detect_thickness.pyとdetect_color.pyを追加
 
-count.pyを追加（ファイル名とカウントを出力）
+detect_and_count_thickness.pyとdetect_and_count_color.pyを追加
 
-detect_original.pyはdetect.pyのオリジナルバージョン、detect_and_count_original.pyはdetect_and_count.pyのオリジナルバージョン
+detect.pyから作成したcount.pyを追加（ファイル名とカウントを出力）
+
+参考文献
 
 https://github.com/WongKinYiu/yolov7
 
 https://github.com/muratali016/Yolov7-Object-Counter-Custom-Funcitons
+
+https://farml1.com/yolov7/
