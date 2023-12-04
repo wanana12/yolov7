@@ -18,3 +18,5 @@ https://github.com/WongKinYiu/yolov7
 https://github.com/muratali016/Yolov7-Object-Counter-Custom-Funcitons
 
 https://farml1.com/yolov7/
+
+https://farml1.com/yolov7_objectcounter/
