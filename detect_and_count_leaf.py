@@ -25,8 +25,8 @@ def count(founded_classes,im0):
   for i, (k, v) in enumerate(founded_classes.items()):
     a=f"{k} = {v}"
     model_values.append(v)
-    align_bottom=align_bottom-35                                                   
-    cv2.putText(im0, str(a) ,(int(align_right),align_bottom), cv2.FONT_HERSHEY_SIMPLEX, 1,(45,255,255),1,cv2.LINE_AA)
+    align_bottom=align_bottom-600                                                   
+    cv2.putText(im0, str(a) ,(int(align_right),align_bottom), cv2.FONT_HERSHEY_SIMPLEX, 3,(0,0,0),5,cv2.LINE_AA)
   
 
  
@@ -76,6 +76,7 @@ def detect(save_img=False):
     # Get names and colors
     names = model.module.names if hasattr(model, 'module') else model.names
     colors = [[random.randint(0, 255) for _ in range(3)] for _ in names]
+    colors[0] = [20, 255, 181]
 
     # Run inference
     if device.type != 'cpu':
@@ -148,7 +149,7 @@ def detect(save_img=False):
 
                     if save_img or view_img:  # Add bbox to image
                         label = f'{names[int(cls)]} {conf:.2f}'
-                        plot_one_box(xyxy, im0, label=label, color=colors[int(cls)], line_thickness=1)
+                        plot_one_box(xyxy, im0, label=label, color=colors[int(cls)], line_thickness=3)
                      
             # Print time (inference + NMS)
             print(f'{s}Done. ({(1E3 * (t2 - t1)):.1f}ms) Inference, ({(1E3 * (t3 - t2)):.1f}ms) NMS')
