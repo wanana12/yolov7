@@ -7,9 +7,9 @@ utils/loss.pyを変更
 
 detect_thickness.pyとdetect_color.pyを追加
 
-detect_and_count_thickness.pyとdetect_and_count_color.pyを追加
+detect_and_count_thickness.pyとdetect_and_count_color.pyとdetect_and_count_leaf.pyを追加
 
-detect.pyから作成したcount.pyを追加（ファイル名とカウントを出力）
+detect.pyから作成したcount.pyを追加（ファイル名とクラス名とカウントを出力）
 
 参考文献
 
